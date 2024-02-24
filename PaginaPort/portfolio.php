@@ -626,7 +626,7 @@
                 <h1 class="text-form">Entre em contato comigo, para mais informações!</h1>
 
                 <button class="botao-text">
-                    <a href="#form" class="bt-text">Clique aqui!</a>
+                    <a href="https://wa.me/5511949532048" class="bt-text">Clique aqui!</a>
                 </button>
 
         </div>
