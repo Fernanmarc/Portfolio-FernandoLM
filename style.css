@@ -75,7 +75,7 @@ header .menu{
 }
 
 
-@media(max-width:1000px){
+@media(max-width:768px){
     .search-box button{
         position: absolute;
     }
@@ -192,7 +192,7 @@ header .menu{
     height: auto;
 }
 
-@media(max-width:1000px){
+@media(max-width:768px){
     .apresentacao{
         display: flex;
         flex-direction: column;
@@ -321,7 +321,7 @@ header .menu{
     }
 }
 
-@media(max-width:1000px){
+@media(max-width:768px){
     .container-qualificacoes{
         HEIGHT: 720px;
         width: 100%;
@@ -587,7 +587,7 @@ section{
 }
 
 
-@media(max-width:1000px){
+@media(max-width:768px){
     .education{
         margin-top: 2340px;
     }
@@ -719,7 +719,7 @@ section{
     padding: 10px;
 }
 
-@media(max-width:1000px){
+@media(max-width:768px){
     .meu-port {
         height: 720px;
     }
@@ -745,7 +745,7 @@ section{
 
 }
 
-@media(max-width:850px){
+@media(max-width:768px){
 
     .text-li {
         font-size: 14px;
@@ -801,7 +801,7 @@ section{
     width: 250px;
 }
 
-@media(max-width:1000px){
+@media(max-width:768px){
 
 
     .logotipo {
@@ -875,7 +875,7 @@ section{
     color: #231f2e;
 }
 
-@media(max-width:1000px){
+@media(max-width:768px){
     .text-form{
         font-size: 24px;
         font-weight: 600;
@@ -935,7 +935,7 @@ section{
     padding: 0 70px;
 }
 
-@media(max-width:1000px){
+@media(max-width:768px){
     li{
         font-size: 13px;
     }
