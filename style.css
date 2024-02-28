@@ -14,12 +14,6 @@ body{
     
 }
 
-@media(max-width:650px){
-    body{
-        display: flex;
-        justify-content: center;
-    }
-}
 
 header{
     height: 100px;
