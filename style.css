@@ -732,11 +732,12 @@ section{
 @media(max-width:650px){
     .meu-port {
         height: 720px;
+        padding: 0 5%;
     }
 
     .menu-port li {
         cursor: pointer;
-        padding: 10px 27px;
+        padding: 0 5%;
         text-decoration: none;
         list-style: none;
         transition: .5s;
@@ -822,8 +823,8 @@ section{
 
 
     .logotipo {
-        height: 680px;
-        margin-top: 880px;
+        height: 850px;
+        margin-top: 1225px;
     }
 
     .linha-rosa2 {
@@ -839,7 +840,7 @@ section{
     }
 
     .l-imagem {
-        width: 130px;
+        width: 100px;
     }
 
     .logotipo-imagens {
@@ -894,10 +895,14 @@ section{
 }
 
 @media(max-width:650px){
+    .box-form{
+        height: 450px;
+        width: 315px;
+    }
     .text-form{
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
-        padding: 5px 0;
+        padding: 5px 25px;
     }
 }
 
@@ -905,6 +910,7 @@ section{
 /* rodape */
 
 .rodape{
+    width: 100%;
     text-align: center;
     padding: 40px;
     background-color: #15121c;
@@ -955,14 +961,17 @@ section{
 
 @media(max-width:650px){
     li{
-        font-size: 13px;
+        font-size: 10px;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
     }
 
     .text-rodape{
         text-align: center;
-        font-size: 11px;
+        font-size: 9px;
         color: #ffffff;
         list-style: none;
-        
+        padding: 0 20px;
     }
 }
