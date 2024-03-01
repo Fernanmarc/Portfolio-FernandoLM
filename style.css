@@ -10,24 +10,6 @@
     font-family: 'Sora', sans-serif;
 }
 
-/* Estilo para a barra de rolagem */
-::-webkit-scrollbar {
-    width: 9px; /* largura da barra de rolagem */
-    background-color: rgb(249, 90, 191); /* cor de fundo da barra de rolagem */
-    z-index: 9999;
-}
-
-/* Estilo para o polegar da barra de rolagem */
-::-webkit-scrollbar-thumb {
-    background-color:#15121c; /* cor do polegar da barra de rolagem */
-    border-radius: 4px; /* raio de borda para torná-lo arredondado */
-}
-
-/* Estilo para a barra de rolagem quando estiver em estado hover (opcional) */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #0b0a0f; /* altere a cor quando estiver em estado hover */
-}
-
 body{
     background-color: #231f2e;
     
