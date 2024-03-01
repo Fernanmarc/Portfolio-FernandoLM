@@ -99,6 +99,8 @@ header .menu{
     
     #chk1:checked ~ ul{
         right: 0;
+        width: 80%;
+        background: rgb(0 0 0 / 98%);
         
     }
     header{
@@ -744,14 +746,14 @@ section{
         transition: .5s;
     }
     .text-li {
-        font-size: 18px;
+        font-size: 13px;
         font-weight: 600;
         color: #fff;
         text-align: center;
     }
 
     .post {
-        max-width: 100px;
+        max-width: 80px;
         padding: 5px;
     }
 
@@ -761,15 +763,6 @@ section{
 
 }
 
-@media(max-width:768px){
-
-    .text-li {
-        font-size: 14px;
-        font-weight: 600;
-        color: #fff;
-        text-align: center;
-    }
-}
 
 
 /* logotipos criados embaixo */
@@ -841,7 +834,7 @@ section{
     }
 
     .l-imagem {
-        width: 100px;
+        width: 80px;
     }
 
     .logotipo-imagens {
@@ -899,6 +892,7 @@ section{
     .box-form{
         height: 450px;
         width: 315px;
+        text-align: center;
     }
     .text-form{
         font-size: 20px;
