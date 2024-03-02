@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="PaginaPort/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link href="lightbox2-2.11.4\src\css/lightbox.css" rel="stylesheet" />
+    <script src="lightbox2-2.11.4\src\js/lightbox.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,9 +51,12 @@
                     minhas habilidades e conhecimentos e também estou realizando qualificações para aprimorar meus conhecimentos!
                  </p>
 
-                <button class="botao-curriculo">
-                    <a href="PaginaPort/img/curriculo.pdf" class="bt" target="_blank">Veja meu CV!</a>
-                </button>
+                <a href="PaginaPort/img/curriculo.pdf" class="bt" target="_blank">
+                    <button class="botao-curriculo">
+                        Veja meu CV!
+                    </button>
+                </a>
+                
 
                 </div>
 
@@ -355,41 +361,167 @@
                             <p>Loja de Calçados Especiais</p>
                             <div class="tam-post">
                                 <div class="linha">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (1).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (2).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (3).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (4).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (5).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (6).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (7).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (8).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (9).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (10).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (11).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (12).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (13).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (14).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (15).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (16).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (17).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (18).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (19).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (20).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (21).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (22).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (23).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (24).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (25).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (26).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (27).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (28).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (29).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (30).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (31).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (32).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (33).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (34).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (35).jpg" alt="" class="post">
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (1).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (1).jpg" alt="" class="post">
+                                        </a>
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (2).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (2).jpg" alt="" class="post">
+                                        </a>
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (3).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (3).jpg" alt="" class="post">
+                                        </a>
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (4).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (4).jpg" alt="" class="post">
+                                        </a>
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (5).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (5).jpg" alt="" class="post">
+                                        </a>
+                                        <!-- Imagem 6 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (6).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (6).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 7 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (7).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (7).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 8 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (8).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (8).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 9 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (9).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (9).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 10 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (10).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (10).jpg" alt="" class="post">
+                                        </a>
+                                        <!-- Imagem 11 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (11).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (11).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 12 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (12).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (12).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 13 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (13).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (13).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 14 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (14).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (14).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 15 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (15).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (15).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 16 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (16).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (16).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 17 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (17).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (17).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 18 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (18).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (18).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 19 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (19).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (19).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 20 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (20).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (20).jpg" alt="" class="post">
+                                        </a>
+                                        <!-- Imagem 21 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (21).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (21).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 22 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (22).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (22).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 23 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (23).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (23).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 24 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (24).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (24).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 25 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (25).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (25).jpg" alt="" class="post">
+                                        </a>
+                                        <!-- Imagem 26 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (26).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (26).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 27 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (27).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (27).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 28 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (28).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (28).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 29 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (29).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (29).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 30 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (30).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (30).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 31 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (31).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (31).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 32 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (32).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (32).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 33 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (33).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (33).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 34 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (34).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (34).jpg" alt="" class="post">
+                                        </a>
+
+                                        <!-- Imagem 35 -->
+                                        <a href="PaginaPort/img-criativos/alexshoes/post/post-alex- (35).jpg" data-lightbox="image-1" data-title="Criativos desenvolvidos para AlexShoes">
+                                            <img src="PaginaPort/img-criativos/alexshoes/post/post-alex- (35).jpg" alt="" class="post">
+                                        </a>
                                 </div>
                                 
                                 
@@ -402,41 +534,145 @@
                             <p>Produtos capilares Veganos</p>
                             <div class="tam-post">
                                 <div class="linha">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (1).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (2).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (3).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (4).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (5).jpg" alt="" class="post">    
-                                    <img src="PaginaPort/img-criativos/nina/Nina (6).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (7).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (8).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (9).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (10).jpg" alt="" class="post">    
-                                    <img src="PaginaPort/img-criativos/nina/Nina (11).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (12).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (13).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (14).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (15).jpg" alt="" class="post">    
-                                    <img src="PaginaPort/img-criativos/nina/Nina (16).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (17).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (18).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (19).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (20).jpg" alt="" class="post">    
-                                    <img src="PaginaPort/img-criativos/nina/Nina (21).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (22).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (23).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (24).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (25).jpg" alt="" class="post">    
-                                    <img src="PaginaPort/img-criativos/nina/Nina (26).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (27).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (28).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (29).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (30).jpg" alt="" class="post">    
-                                    <img src="PaginaPort/img-criativos/nina/Nina (31).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (32).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (33).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (34).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/nina/Nina (35).jpg" alt="" class="post">    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (1).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (1).jpg" alt="" class="post">
+                                    </a>
+                                    <a href="PaginaPort/img-criativos/nina/Nina (2).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (2).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (3).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (3).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (4).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (4).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (5).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (5).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (6).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (6).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (7).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (7).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (8).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (8).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (9).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (9).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (10).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (10).jpg" alt="" class="post">
+                                    </a>
+
+                                    <a href="PaginaPort/img-criativos/nina/Nina (11).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (11).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (12).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (12).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (13).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (13).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (14).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (14).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (15).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (15).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (16).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (16).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (17).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (17).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (18).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (18).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (19).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (19).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (20).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (20).jpg" alt="" class="post">
+                                    </a>
+
+                                    <a href="PaginaPort/img-criativos/nina/Nina (21).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (21).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (22).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (22).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (23).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (23).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (24).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (24).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (25).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (25).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (26).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (26).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (27).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (27).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (28).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (28).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (29).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (29).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (30).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (30).jpg" alt="" class="post">
+                                    </a>
+
+                                    <a href="PaginaPort/img-criativos/nina/Nina (31).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (31).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (32).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (32).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (33).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (33).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (34).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (34).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/nina/Nina (35).jpg" data-lightbox="image-2" data-title="Criativos desenvolvidos para Nina Distribuidora">
+                                        <img src="PaginaPort/img-criativos/nina/Nina (35).jpg" alt="" class="post">
+                                    </a>
+    
                                 </div>
                                 
                             </div>
@@ -448,41 +684,146 @@
                             <p>Roupas Infantil</p>
                             <div class="tam-post">
                                 <div class="linha">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (1).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (2).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (3).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (4).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (5).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (6).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (7).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (8).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (9).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (10).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (11).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (12).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (13).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (14).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (15).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (16).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (17).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (18).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (19).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (20).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (21).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (22).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (23).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (24).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (25).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (26).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (27).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (28).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (29).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (30).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (31).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (32).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (33).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (34).png" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/Criança do MJ/C- (35).png" alt="" class="post">
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (1).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (1).png" alt="" class="post">
+                                    </a>
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (2).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (2).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (3).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (3).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (4).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (4).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (5).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (5).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (6).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (6).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (7).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (7).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (8).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (8).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (9).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (9).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (10).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (10).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (11).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (11).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (12).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (12).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (13).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (13).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (14).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (14).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (15).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (15).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (16).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (16).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (17).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (17).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (18).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (18).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (19).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (19).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (20).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (20).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (21).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (21).png" alt="" class="post">
+                                    </a>
+
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (22).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (22).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (23).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (23).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (24).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (24).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (25).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (25).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (26).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (26).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (27).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (27).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (28).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (28).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (29).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (29).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (30).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (30).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (31).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (31).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (32).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (32).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (33).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (33).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (34).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (34).png" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/Criança do MJ/C- (35).png" data-lightbox="image-3" data-title="Criativos desenvolvidos para Criança do Meu Jeito">
+                                        <img src="PaginaPort/img-criativos/Criança do MJ/C- (35).png" alt="" class="post">
+                                    </a>
+                                    
+                                    
                                 </div>
                                   
                             </div>   
@@ -494,41 +835,145 @@
                             <p>Criativos desenvolvidos para diversas empresas!</p>
                             <div class="tam-post">
                                 <div class="linha">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (1).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (2).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (3).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (4).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (5).jpg" alt="" class="post">  
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (6).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (7).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (8).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (9).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (10).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (11).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (12).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (13).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (14).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (15).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (16).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (17).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (18).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (19).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (20).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (21).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (22).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (23).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (24).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (25).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (26).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (27).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (28).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (29).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (30).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (36).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (37).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (38).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (39).jpg" alt="" class="post">
-                                    <img src="PaginaPort/img-criativos/aleatorio/all (40).jpg" alt="" class="post">
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (1).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (1).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (2).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (2).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (3).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (3).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (4).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (4).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (5).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (5).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (6).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (6).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (7).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (7).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (8).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (8).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (9).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (9).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (10).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (10).jpg" alt="" class="post">
+                                    </a>
+
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (11).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (11).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (12).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (12).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (13).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (13).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (14).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (14).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (15).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (15).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (16).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (16).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (17).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (17).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (18).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (18).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (19).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (19).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (20).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (20).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (21).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (21).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (22).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (22).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (23).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (23).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (24).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (24).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (25).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (25).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (26).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (26).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (27).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (27).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (28).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (28).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (29).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (29).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (30).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (30).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (36).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (36).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (37).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (37).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (38).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (38).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (39).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (39).jpg" alt="" class="post">
+                                    </a>
+                                    
+                                    <a href="PaginaPort/img-criativos/aleatorio/all (40).jpg" data-lightbox="image-4" data-title="Projetos Curtos">
+                                        <img src="PaginaPort/img-criativos/aleatorio/all (40).jpg" alt="" class="post">
+                                    </a>
                                 </div>     
                             </div>   
                         </div>
@@ -543,21 +988,65 @@
                 <h1 class="logo-titulo">Logotipos</h1>
                 <p class="logo-subtitulo">Alguns logos que tive a oportunidade de desenvolver!</p>
                     <div class="logotipo-imagens">
-                        <img src="PaginaPort/img-logo/agill.png" alt="Best Shape Health Food" class="l-imagem">
-                        <img src="PaginaPort/img-logo/Amarena.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/Barnno.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/Best.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/comunidade.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/Lalolita.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/lopes.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/m-car.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/molupa-lingerie.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/molupa.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/nina.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/quality master.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/Raro.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/veritas.png" alt="" class="l-imagem">
-                        <img src="PaginaPort/img-logo/viviane nutri.png" alt="" class="l-imagem">
+                        <a href="PaginaPort/img-logo/agill.png" data-lightbox="image-5" data-title="Logotipo Agillog">
+                            <img src="PaginaPort/img-logo/agill.png" alt="" class="l-imagem">
+                        </a>
+                        <a href="PaginaPort/img-logo/Amarena.png" data-lightbox="image-5" data-title="Logitpo Amarena">
+                            <img src="PaginaPort/img-logo/Amarena.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/Barnno.png" data-lightbox="image-5" data-title="Logitpo Barnno">
+                            <img src="PaginaPort/img-logo/Barnno.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/Best.png" data-lightbox="image-5" data-title="Logotipo Best Shape Health Food">
+                            <img src="PaginaPort/img-logo/Best.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/comunidade.png" data-lightbox="image-5" data-title="Logotipo Comunidade">
+                            <img src="PaginaPort/img-logo/comunidade.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/Lalolita.png" data-lightbox="image-5" data-title="Logotipo Lalolita">
+                            <img src="PaginaPort/img-logo/Lalolita.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/lopes.png" data-lightbox="image-5" data-title="Logotipo LopesDSGN">
+                            <img src="PaginaPort/img-logo/lopes.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/m-car.png" data-lightbox="image-5" data-title="Logotipo M-Car">
+                            <img src="PaginaPort/img-logo/m-car.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/molupa-lingerie.png" data-lightbox="image-5" data-title="Logotipo Molupa Lingerie">
+                            <img src="PaginaPort/img-logo/molupa-lingerie.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/molupa.png" data-lightbox="image-5" data-title="Logotipo Molupa Mimos">
+                            <img src="PaginaPort/img-logo/molupa.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/nina.png" data-lightbox="image-5" data-title="Logotipo Nina Distribuidora EK">
+                            <img src="PaginaPort/img-logo/nina.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/quality master.png" data-lightbox="image-5" data-title="Logotipo Quality Master">
+                            <img src="PaginaPort/img-logo/quality master.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/Raro.png" data-lightbox="image-5" data-title="Logotipo Raro Clothing">
+                            <img src="PaginaPort/img-logo/Raro.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/veritas.png" data-lightbox="image-5" data-title="Logo Veritas">
+                            <img src="PaginaPort/img-logo/veritas.png" alt="" class="l-imagem">
+                        </a>
+                        
+                        <a href="PaginaPort/img-logo/viviane nutri.png" data-lightbox="image-5" data-title="Logotipo Viviane Nutricionista">
+                            <img src="PaginaPort/img-logo/viviane nutri.png" alt="" class="l-imagem">
+                        </a>
+                        
                         
                     </div>
             </div>
@@ -629,7 +1118,10 @@
 
                         // Adiciona a classe 'selected' ao item do menu clicado
                         menuItens[numero - 1].classList.add('selected');
+
                     }
+
+                    
             </script>
 </body>
 </html>

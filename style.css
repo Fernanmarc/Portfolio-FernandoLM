@@ -173,6 +173,7 @@ header .menu{
     font-size: 15px;
     margin-top: 30px;
     border-color: rgb(249, 90, 191);
+    color: #fff;
 }
 .bt{
     color: #fff;
@@ -182,12 +183,10 @@ header .menu{
 .botao-curriculo:hover{
     background-color: rgb(249, 90, 191);
     cursor: pointer;
+    color: #231f2e;
     transition: transform 0.2s;
 }
 
-.bt:hover{
-    color: #231f2e;
-}
 
 .img{
     max-width: 400px;
@@ -768,6 +767,11 @@ section{
 
 
 /* logotipos criados embaixo */
+
+#lightbox .lb-outerContainer {
+    background: #231f2e;
+}
+
 
 .linha-rosa2 {
     /* width: 67%; */
