@@ -763,6 +763,14 @@ section{
         padding: 0 8%;
     }
 
+    .conteudo h1 {
+        font-size: 1.4rem;
+    }
+
+    
+    .conteudo p {
+        font-size: 0.8rem;
+    }
 }
 
 
