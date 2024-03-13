@@ -65,6 +65,20 @@ body{
     display: none;
   }
 
+  @media screen and (max-width: 768px) {
+    .gif {
+      width: 225px; /* Reduz a largura do GIF em telas menores */
+    }
+
+    .loading-message {
+      font-size: 6vw; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .loader{
+        margin-top: 30px;
+    }
+  }
+
 header{
     height: 100px;
     display: flex;
