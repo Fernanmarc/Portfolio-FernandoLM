@@ -14,7 +14,56 @@ body{
     
 }
 
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #231f2e;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
 
+  .loader {
+    border: 8px solid rgb(166, 55, 125);
+    border-radius: 50%;
+    border-top: 8px solid  rgb(249, 90, 191);
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin-top: 20px;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .gif{
+    width: 300px; /* Largura desejada para o GIF */
+    height: auto; /* Altura ajustada automaticamente de acordo com a largura */
+    border-radius: 20px;
+  }
+
+  .highlight {
+    color: rgb(249, 90, 191);
+  }
+
+  .loading-message {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .content-tela {
+    display: none;
+  }
 
 header{
     height: 100px;

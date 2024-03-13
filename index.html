@@ -13,6 +13,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="loader-container" id="loader">
+        <div class="loading-gif">
+            <img src="./PaginaPort/img/mash.gif" class="gif">
+        </div>
+        <div class="loading-message">
+            <span class="highlight">Magos</span> se alimentando, por favor aguarde!
+        </div>
+        <div class="loader"></div>
+    </div>
+
+    <div class="content-tela" id="content-tela">
         <header>
             <input type="checkbox" name="" id="chk1">
             <div class="logo">
@@ -1094,8 +1106,14 @@
 
                 </div>
             </footer>
-
+</div>
             <script>
+                window.addEventListener('load', function() {
+                        // Esconde a tela de carregamento
+                        document.getElementById('loader').style.display = 'none';
+                        // Exibe o conteúdo do site
+                        document.getElementById('content-tela').style.display = 'block';
+                    });
                  window.onload = function () {
                         mostrarConteudo(1);
                     };
