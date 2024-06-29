@@ -262,6 +262,7 @@ header .menu{
         flex-direction: column;
         align-items: center;
         margin-top: 60px;
+        height: 100vh;
     }
 
     .t-titulo{
@@ -663,6 +664,7 @@ section{
     .heading{
         padding: 60px 0;
         text-align: center;
+        margin-top: -279px;
     }
 
     .education .education-row {
@@ -793,8 +795,15 @@ section{
 }
 
 .post{
-    max-width: 180px;
+    max-width: 200px;
     padding: 10px;
+}
+
+@media(max-width:1650px){
+    .post{
+    max-width: 186px;
+    padding: 18px;
+}
 }
 
 @media(max-width:650px){
@@ -894,7 +903,7 @@ section{
 
 
     .logotipo {
-        height: 850px;
+        height: 870px;
         margin-top: 1225px;
     }
 
